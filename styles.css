@@ -213,7 +213,7 @@ nav {
     background-size: cover;
     height: 100vh;
     max-width: 100%;
-
+margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -298,10 +298,13 @@ nav {
 .scroll-down {
     position: absolute;
     bottom: 30px;
-    left: 48%;
-    font-size: .8rem;
+    left: 50%;
+  transform: translateX(-50%);
+    font-size: .7rem;
     color: var(--primary);
     letter-spacing: 4px;
+    margin: 0;
+   
 }
 
 .scroll-down i {
