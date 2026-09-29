@@ -29,6 +29,75 @@
     });
 
 
+// menu filter
+
+  const filterButtons = document.querySelectorAll(".filter-btn");
+
+        const menuCards = document.querySelectorAll(".card");
+
+
+        filterButtons.forEach(button => {
+
+            button.addEventListener("click", () => {
+
+                filterButtons.forEach(btn => {
+
+                    btn.classList.remove("active");
+
+                });
+
+                button.classList.add("active");
+
+
+                const filter = button.dataset.filter;
+
+
+                menuCards.forEach(card => {
+
+                    const category =
+                        card.dataset.category;
+
+
+                    if (
+                        filter === "all" ||
+                        category === filter
+                    ) {
+
+                        card.classList.remove("hide");
+
+                    } else {
+
+                        card.classList.add("hide");
+
+                    }
+
+                });
+
+            });
+
+        });
+
+// order button
+
+
+document.querySelectorAll(".order-btn").forEach(button => {
+
+    button.addEventListener("click", () => {
+        alert("Thank you! Please contact TasteCraft to place your order.");
+    });
+   
+});
+
+
+
+
+
+
+
+
+
+
+
 
     // news letter form
 
