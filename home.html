@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TasteCraft | Fine Dining Experience</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Orbitron:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Rouge+Script&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- =====================================================
+     NAVBAR
+===================================================== -->
+    <header>
+        <nav id="navbar">
+            <div class="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="#C89445" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="6" r="1" fill="#C89445" />
+                    <path d="M4 16A8 8 0 0 1 20 16" />
+                    <line x1="3" y1="17" x2="22" y2="17" />
+                </svg>
+                <div class="nav-text">
+                    <h2>TasteCraft</h2>
+                    <p>RESTAURANT</p>
+                </div>
+            </div>
+
+            <ul id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#ambience">Ambience</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="hide" style="color: var(--black);">Reserve Table</a></li>
+            </ul>
+
+            <a href="#contact" class="nav-btn">Reserve Table</a>
+
+
+            <button id="toggler">
+                <span class="hamberger"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- =====================================================
+         HERO
+===================================================== -->
+    <section id="home">
+        <main class="hero-section">
+            <div class="hero-badge">
+                ✦ FINE DINING EXPERIENCE ✦
+            </div>
+
+            <div class="hero-script">
+                Taste The
+            </div>
+
+            <h1>
+                ART <span>OF DINING</span>
+            </h1>
+
+            <p>Discover carefully crafted dishes, fresh ingredients and unforgettable flavors — created to turn every
+                meal into a beautiful experience.</p>
+
+            <div class="hero-btn-container">
+                <a href="#menu">Explore Menu</a>
+
+                <a href="#contact">Reserve a Table</a>
+            </div>
+
+            <div class="scroll-down">SCROLL
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </main>
+    </section>
+
+    <!-- =====================================================
+         ABOUT
+===================================================== -->
+    <section id="about">
+        <div class="about-section">
+            <div class="about-img">
+                <img src="image/about.jpg" alt="About US">
+                <div class="about-img-layer">
+                    <span>EST</span>
+                    <strong> 2026</strong>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <h5>OUR STORY</h5>
+                <h2>Where Every Dish<span>
+                        Tells a Story.</span></h2>
+                <p>At TasteCraft, we believe food is more than just a meal. It is an experience built around flavor,
+                    creativity and connection.</p>
+                <p>Our chefs combine timeless culinary traditions with modern techniques to create dishes that feel
+                    familiar, yet exciting.</p>
+                <a href="#menu">Discover Our Menu</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         MENU
+===================================================== -->
+    <section id="menu">
+
+        <div class="section-heading">
+            <span>OUR MENU</span>
+            <h2>Signature Flavors</h2>
+            <p>From delicate starters to indulgent desserts, every dish is prepared with passion and attention to
+                detail.</p>
+        </div>
+
+        <!-- filter -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+
+            <button class="filter-btn" data-filter="starters">Starters</button>
+
+            <button class="filter-btn" data-filter="main">Main Course</button>
+
+            <button class="filter-btn" data-filter="desserts">Desserts</button>
+
+            <button class="filter-btn" data-filter="drinks">Drinks</button>
+        </div>
+
+        <!-- card-container -->
+        <div class="menu-card">
+            <!-- card-1 -->
+            <div class="card" data-category="starters">
+                <div class="menu-img">
+                    <span>starter</span>
+                    <img src="image/Truffle Bruschetta.avif" alt="Truffle Bruschetta">
+                </div>
+
+                <div class="card-content">
+                    <div class="card-top">
+                        <h3>Truffle Bruschetta</h3>
+                        <span>₹249</span>
+                    </div>
+                    <p>Crispy artisan bread topped with creamy truffle, tomatoes, and fresh herbs.</p>
+                    <div class="card-bottom">
+                        <span>★ 4.8</span>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- card-2 -->
+            <div class="card" data-category="starters">
+                <div class="menu-img">
+                    <span>starter</span>
+                    <img src="image/Crispy Chicken Wings.avif" alt="TCrispy Chicken Wings">
+                </div>
+
+                <div class="card-content">
+                    <div class="card-top">
+                        <h3>Crispy Chicken Wings</h3>
+                        <span>₹299</span>
+                    </div>
+                    <p>Golden, tender wings tossed in a rich signature glaze with a hint of spice.</p>
+                    <div class="card-bottom">
+                        <span>★ 4.9</span>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- card-3 -->
+            <div class="card" data-category="main">
+                <div class="menu-img">
+                    <span>main course</span>
+                    <img src="image/Truffle Cream Pasta.jpg" alt="Truffle Cream Pasta">
+                </div>
+
+                <div class="card-content">
+                    <div class="card-top">
+                        <h3>Truffle Cream Pasta</h3>
+                        <span>₹349</span>
+                    </div>
+                    <p>Silky handmade pasta coated in a luxurious truffle cream sauce and parmesan.</p>
+                    <div class="card-bottom">
+                        <span>★ 4.7</span>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- card-4 -->
+            <div class="card" data-category="main">
+                <div class="menu-img">
+                    <span>main course</span>
+                    <img src="image/Grilled Herb Steak.avif" alt="Grilled Herb Steak">
+                </div>
+
+                <div class="card-content">
+                    <div class="card-top">
+                        <h3>Grilled Herb Steak</h3>
+                        <span>₹399</span>
+                    </div>
+                    <p>Perfectly grilled tender steak finished with fragrant herbs and a rich house sauce.</p>
+                    <div class="card-bottom">
+                        <span>★ 4.9</span>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- card-5 -->
+            <div class="card" data-category="desserts">
+                <div class="menu-img">
+                    <span>dessert</span>
+                    <img src="image/Chocolate Lava Cake.jpg" alt="Chocolate Lava Cake">
+                </div>
+
+                <div class="card-content">
+                    <div class="card-top">
+                        <h3>Chocolate Lava Cake</h3>
+                        <span>₹199</span>
+                    </div>
+                    <p>Warm chocolate cake with a molten center, served with smooth vanilla cream.</p>
+                    <div class="card-bottom">
+                        <span>★ 4.8</span>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- card-6 -->
+            <div class="card" data-category="drinks">
+                <div class="menu-img">
+                    <span>drink</span>
+                    <img src="image/Berry Sunset Mocktail.avif" alt="Berry Sunset Mocktail">
+                </div>
+
+                <div class="card-content">
+                    <div class="card-top">
+                        <h3>Berry Sunset Mocktail</h3>
+                        <span>₹149</span>
+                    </div>
+                    <p>A refreshing blend of ripe berries, citrus, and sparkling freshness.</p>
+                    <div class="card-bottom">
+                        <span>★ 4.7</span>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+    </section>
+
+    <!-- =====================================================
+         FEATURED DISH
+ ===================================================== -->
+    <section id="feature">
+        <div class="feature-container">
+            <div class="feature-img">
+                <img src="image/The Golden Plate.avif" alt="CHEF'S SIGNATURE">
+            </div>
+
+            <div class="feature-content">
+                <span>CHEF'S SIGNATURE</span>
+
+                <h2>The <span>Golden Plate</span></h2>
+
+                <p>A beautifully grilled signature creation served with roasted vegetables, creamy sauce and carefully
+                    selected herbs.</p>
+
+                <div>₹599</div>
+
+                <a href="#contact">Reserve a Table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         AMBIENCE
+===================================================== -->
+    <section id="ambience">
+        <div class="ambience-container">
+            <div class="section-heading">
+                <span>THE EXPERIENCE</span>
+                <h2>Our Ambience </h2>
+                <p>A warm and elegant environment designed for memorable moments.</p>
+            </div>
+
+            <div class="gallery-container">
+                <!-- image 1 -->
+                <div class="container one">
+                    <img src="image/dining.avif" alt="Elegant Dining">
+
+                    <div class="container-text">
+                        <span>01</span>
+                        <h3>Elegant Dining</h3>
+                    </div>
+                </div>
+
+
+                <!-- image 2 -->
+                <div class="container two">
+                    <img src="image/indoor.jpg" alt="Premium Seating">
+
+                    <div class="container-text">
+                        <span>02</span>
+                        <h3>Premium Seating</h3>
+                    </div>
+                </div>
+
+
+                <!-- image 3 -->
+                <div class="container">
+                    <img src="image/seating 1.avif" alt="Perfect Evenings">
+
+                    <div class="container-text">
+                        <span>03</span>
+                        <h3>Perfect Evenings</h3>
+                    </div>
+                </div>
+
+
+                <!-- image 4 -->
+                <div class="container">
+                    <img src="image/memory.avif" alt="Made For Memories">
+
+                    <div class="container-text">
+                        <span>04</span>
+                        <h3>Made For Memories</h3>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         WHY US
+===================================================== -->
+    <section id="why-us">
+        <div class="why-us">
+            <div class="section-heading">
+                <span>WHY TASTECRAFT</span>
+                <h2>Crafted With Purpose</h2>
+            </div>
+
+            <div class="why-grid">
+
+                <!--card 1 -->
+                <div class="why-card">
+                    <i class="fa-solid fa-leaf"></i>
+
+                    <h3>
+                        Fresh Ingredients
+                    </h3>
+
+                    <p>
+                        Carefully selected ingredients
+                        for every dish.
+                    </p>
+                </div>
+
+                <!-- card 2 -->
+                <div class="why-card">
+                    <i class="fa-solid fa-utensils"></i>
+
+                    <h3>
+                        Expert Chefs
+                    </h3>
+
+                    <p>
+                        Every plate is prepared with
+                        passion and precision.
+                    </p>
+                </div>
+
+                <!-- card 3-->
+                <div class="why-card">
+                    <i class="fa-solid fa-kitchen-set"></i>
+
+                    <h3>
+                        Hygienic Kitchen
+                    </h3>
+
+                    <p>
+                        Clean preparation and quality
+                        are always our priority.
+                    </p>
+                </div>
+
+
+                <!-- card 4 -->
+                <div class="why-card">
+                    <i class="fa-solid fa-heart"></i>
+
+                    <h3>
+                        Made With Love
+                    </h3>
+
+                    <p>
+                        Every dish is crafted with
+                        care and attention.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         REVIEWS
+===================================================== -->
+    <section id="reviews">
+        <div class="reviews">
+            <div class="section-heading">
+                <span>CUSTOMER LOVE</span>
+                <h2 style="color: var(--black);">What Our Guests Say</h2>
+            </div>
+
+            <div class="review-wrapper">
+                <div class="reviews-container">
+
+                    <!-- card-1 -->
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Amazing food and beautiful ambience. Every dish was beautifully presented and full of
+                            flavor."
+                        </p>
+
+                        <div class="customer">
+                            <img src="image/memorys.jpg" alt="">
+                            <div>
+                                <h4>Ganesh Kumar</h4>
+                                <span>Verified Guest</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- card-2 -->
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+
+                        <p>"Loved the presentation, taste and atmosphere. Definitely coming back again."</p>
+
+                        <div class="customer">
+                            <img src="image/memorys.jpg" alt="">
+                            <div>
+                                <h4>Magesh</h4>
+                                <span>Verified Guest</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- card-3 -->
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"A wonderful place for a family dinner. Everything tasted fresh and beautifully prepared."
+                        </p>
+
+                        <div class="customer">
+                            <img src="image/memorys.jpg" alt="">
+                            <div>
+                                <h4>Varshini </h4>
+                                <span>Verified Guest</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- card-4 -->
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p> "The food was absolutely amazing. Every dish
+                            was fresh, beautifully presented and full of flavour."</p>
+
+                        <div class="customer">
+                            <img src="image/memorys.jpg" alt="">
+                            <div>
+                                <h4>Arun Kumar</h4>
+                                <span>Food Lover</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- card-5 -->
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>
+                            "Beautiful ambience, excellent service and
+                            delicious food. Definitely coming back again!"
+                        </p>
+
+                        <div class="customer">
+                            <img src="image/memorys.jpg" alt="">
+                            <div>
+                                <h4> Raj</h4>
+                                <span>Happy Guest</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- card-6 -->
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>
+                            "One of the best dining experiences I have had.
+                            Everything was perfectly prepared and presented."
+                        </p>
+
+                        <div class="customer">
+                            <img src="image/memorys.jpg" alt="">
+                            <div>
+                                <h4>Vignesh S</h4>
+                                <span>Regular Guest</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- duplicate -->
+
+
+                    <!-- card-1 -->
+                    <div class="review-card" aria-hidden="true">
+                        <div class="stars">★★★★★</div>
+                        <p>"Amazing food and beautiful ambience. Every dish was beautifully presented and full of
+                            flavor."
+                        </p>
+
+                        <div class="customer">
+                            <img src="image/memorys.jpg" alt="">
+                            <div>
+                                <h4>Ganesh Kumar</h4>
+                                <span>Verified Guest</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- card-2 -->
+                    <div class="review-card" aria-hidden="true">
+                        <div class="stars">★★★★★</div>
+
+                        <p>"Loved the presentation, taste and atmosphere. Definitely coming back again."</p>
+
+                        <div class="customer">
+                            <img src="image/memorys.jpg" alt="">
+                            <div>
+                                <h4>Magesh</h4>
+                                <span>Verified Guest</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- card-3 -->
+                    <div class="review-card" aria-hidden="true">
+                        <div class="stars">★★★★★</div>
+                        <p>"A wonderful place for a family dinner. Everything tasted fresh and beautifully prepared."
+                        </p>
+
+                        <div class="customer">
+                            <img src="image/memorys.jpg" alt="">
+                            <div>
+                                <h4>Varshini </h4>
+                                <span>Verified Guest</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- card-4 -->
+                    <div class="review-card" aria-hidden="true">
+                        <div class="stars">★★★★★</div>
+                        <p> "The food was absolutely amazing. Every dish
+                            was fresh, beautifully presented and full of flavour."</p>
+
+                        <div class="customer">
+                            <img src="image/memorys.jpg" alt="">
+                            <div>
+                                <h4>Arun Kumar</h4>
+                                <span>Food Lover</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- card-5 -->
+                    <div class="review-card" aria-hidden="true">
+                        <div class="stars">★★★★★</div>
+                        <p>
+                            "Beautiful ambience, excellent service and
+                            delicious food. Definitely coming back again!"
+                        </p>
+
+                        <div class="customer">
+                            <img src="image/memorys.jpg" alt="">
+                            <div>
+                                <h4> Raj</h4>
+                                <span>Happy Guest</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- card-6 -->
+                    <div class="review-card" aria-hidden="true">
+                        <div class="stars">★★★★★</div>
+                        <p>
+                            "One of the best dining experiences I have had.
+                            Everything was perfectly prepared and presented."
+                        </p>
+
+                        <div class="customer">
+                            <img src="image/memorys.jpg" alt="">
+                            <div>
+                                <h4>Vignesh S</h4>
+                                <span>Regular Guest</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         RESERVATION
+ ===================================================== -->
+    <section id="contact">
+        <div class="contact-container">
+
+            <div class="address">
+
+                <h2> Let's <span>Dine Together.</span> </h2>
+
+                <p> Planning a special dinner, celebration or simply craving something deliciousReserve your table and
+                    let us take care of the rest.</p>
+
+                <!-- item -1 -->
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+                        <span>LOCATION</span>
+                        <p>123 Food Street, Erode, Tamil Nadu</p>
+                    </div>
+
+                </div>
+
+
+                <!-- item -2 -->
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <span>PHONE</span>
+                        <p>+91 99446 62233</p>
+                    </div>
+
+                </div>
+
+
+                <!-- item -3 -->
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <div>
+                        <span>EMAIL</span>
+                        <p>tastecraft@gmail.com</p>
+                    </div>
+
+                </div>
+
+
+                <!-- item -4 -->
+                <div class="contact-item">
+                    <i class="fa-solid fa-clock"></i>
+
+                    <div>
+                        <span>
+                            OPENING HOURS</span>
+                        <p>Mon - Sun : 11 AM - 11 PM</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!-- form -->
+                 <div class="form-container">
+            <form id="ReservationForm">
+                <div class="form-grid">
+
+                    <!-- grid-1 -->
+                    <div class="form-content">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Your Name">
+                        <small class="form-error"> Please enter your name.</small>
+                    </div>
+
+                    <!-- grid-2 -->
+                    <div class="form-content">
+                        <label>Mobile Number</label>
+                        <input  placeholder="10 Digit Mobile Number" type="tel" inputmode="numeric" pattern="[0-9]{10}" maxlength="10">
+                        <small class="form-error"> Enter a valid mobile number.</small>
+                    </div>
+
+                    <!-- grid-3 -->
+                    <div class="form-content">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="youexample@gmail.com">
+                        <small class="form-error"> Please enter a valid email.</small>
+                    </div>
+
+                    <!-- grid-4 -->
+                    <div class="form-content">
+                        <label>Guests</label>
+                        <select id="guests">
+
+                            <option value="">
+                                Select Guests
+                            </option>
+
+                            <option value="1">
+                                1 Guest
+                            </option>
+
+                            <option value="2">
+                                2 Guests
+                            </option>
+
+                            <option value="3">
+                                3 Guests
+                            </option>
+
+                            <option value="4">
+                                4 Guests
+                            </option>
+
+                            <option value="5">
+                                5 Guests
+                            </option>
+
+                            <option value="6">
+                                6 Guests
+                            </option>
+
+                            <option value="7">
+                                7 Guests
+                            </option>
+
+                            <option value="8">
+                                8 Guests
+                            </option>
+
+                        </select>
+                        <small class="form-error">Please Select Guest</small>
+                    </div>
+
+                    <!-- grid-5 -->
+                    <div class="form-content">
+                        <label>Date</label>
+                        <input type="date">
+                        <small class="form-error"> Please select a valid date.</small>
+                    </div>
+
+                    <!-- grid-6 -->
+                    <div class="form-content">
+                        <label>Time</label>
+                        <select id="time">
+
+                            <option value="">
+                                Select Time
+                            </option>
+
+                            <option>
+                                11:00 AM
+                            </option>
+
+                            <option>
+                                12:00 PM
+                            </option>
+
+                            <option>
+                                1:00 PM
+                            </option>
+
+                            <option>
+                                6:00 PM
+                            </option>
+
+                            <option>
+                                7:00 PM
+                            </option>
+
+                            <option>
+                                8:00 PM
+                            </option>
+
+                            <option>
+                                9:00 PM
+                            </option>
+
+                            <option>
+                                10:00 PM
+                            </option>
+
+                        </select>
+                        <small class="form-error">Please Select Time</small>
+                    </div>
+
+
+                    <div class="form-content full">
+
+                        <label>
+                            Special Request
+                        </label>
+
+                        <textarea id="message" placeholder="Any special request?"></textarea>
+
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn" >
+                    Reserve My Table
+                </button>
+            </form>
+            <!-- SUCCESS -->
+
+            <div class="success" id="success">
+
+                <i class="fa-solid fa-check"></i>
+
+                <h3>
+                    Table Reserved!
+                </h3>
+
+                <p>
+                    Thank you for choosing
+                    TasteCraft.
+                </p>
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         NEWSLETTER
+===================================================== -->
+<section id="newsletter">
+    <div class="news">
+        <div class="section-heading">
+            <span>STAY CONNECTED</span>
+            <h2>Stay in the TasteCraft Circle</h2>
+            <p class="news-para">Get our latest menu updates, special offers and dining events.</p>
+        </div>
+
+
+         <form
+                class="newsletter-form"
+                id="newsletterForm">
+
+                <input
+                    type="email"
+                    id="newsletterEmail"
+                    placeholder="Enter your email"
+                    required>
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+    </div>
+</section>
+
+    <!-- =====================================================
+         FOOTER
+===================================================== -->
+  <footer>
+
+        <div class="footer-container">
+
+
+            <div class="footer-info">
+
+                <div class="footer-logo">
+
+                    Taste<span>Craft</span>
+
+                </div>
+
+                <p>
+
+                    Crafted with passion,
+                    served with love.
+
+                    Experience delicious food,
+                    beautiful ambience and
+                    unforgettable moments.
+
+                </p>
+
+
+                <div class="social-icons">
+
+                    <a href="#"
+                        aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#"
+                        aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="#"
+                        aria-label="Twitter">
+
+                        <i class="fa-brands fa-x-twitter"></i>
+
+                    </a>
+
+                    <a href="#"
+                        aria-label="WhatsApp">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-col">
+
+                <h3>
+                    QUICK LINKS
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#home">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#menu">
+                            Menu
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#ambience">
+                            Ambience
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#reviews">
+                            Reviews
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-col">
+
+                <h3>
+                    OPENING HOURS
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Monday - Friday
+                    </li>
+
+                    <li>
+                        11 AM - 11 PM
+                    </li>
+
+                    <li>
+                        Saturday - Sunday
+                    </li>
+
+                    <li>
+                        10 AM - 11 PM
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 TasteCraft Restaurant.
+                All Rights Reserved.
+            </p>
+
+            <p>
+                Privacy Policy · Terms & Conditions
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- =====================================================
+         JAVASCRIPT
+===================================================== -->
+<script src="script.js">
+   
+
+
+</script>
+</body>
+
+</html>
