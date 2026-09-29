@@ -18,10 +18,7 @@
         font-size: .9rem;
     }
 
-    .scroll-down {
-        bottom: 15px;
-        left: 46%;
-    }
+   
 
     #home {
         padding: 30px;
@@ -115,6 +112,10 @@
     .nav-btn {
         display: none;
     }
+    #home{
+            background-attachment: fixed;
+
+    }
 
     #about {
         background: #0a0a0a;
@@ -181,6 +182,9 @@
     .menu-card {
         grid-template-columns: 1fr;
     }
+    .feature-content h2 {
+    font-size: 2.5rem;
+}
 
     .gallery-container {
         grid-template-columns: 1fr 1fr;
@@ -216,6 +220,14 @@
 }
 
 @media screen and (max-width:450px) {
+    .hero-section p {
+   font-size: .9rem;
+}
+.hero-btn-container {
+   
+    gap: 1rem;
+    flex-direction: column;
+}
     .why-grid {
 
         grid-template-columns: 1fr;
@@ -225,5 +237,10 @@
     .filter-container {
         gap: 10px;
     }
+    #newsletter {
+    
+    padding: 3rem 4%;
+   
+}
 
 }
