@@ -116,7 +116,7 @@ nav {
 
 }
 
-.hide {
+.hide-btn {
     display: none;
       font-size: 1rem;
     font-weight: 600;
@@ -536,6 +536,11 @@ padding: 5rem 6%;
     overflow: hidden;
 
 }
+.card.hide{
+    display: none; 
+}
+
+
 
 .card:hover {
     transform: translateY(-8px);
